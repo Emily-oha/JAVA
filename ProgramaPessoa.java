@@ -1,6 +1,6 @@
 public class ProgramaPessoa {
     public static void main(String[] args) {
-        Pessoa pessoa1 = new Pessoa("Max", "01/01/1990");
+        Pessoa pessoa1 = new Pessoa("Max", 0, "01/01/1990");
         System.out.println("Nome: " + pessoa1.getNome());
         System.out.println("Data de Nascimento: " + pessoa1.getDataNasc());
 

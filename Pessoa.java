@@ -2,7 +2,7 @@ public class Pessoa {
     private String nome;
     private String dataNasc;
 
-    public Pessoa(String nome, String dataNasc) {
+    public Pessoa(String nome, int i, String dataNasc) {
         this.nome = nome;
         this.dataNasc = dataNasc;
     }
