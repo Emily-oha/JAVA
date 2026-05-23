@@ -1,14 +1,24 @@
 public class ProgramaConta {
+
     public static void main(String[] args) {
-        Conta conta1 = new Conta();
-        conta1.setTitular("Max");
-        conta1.setNumero(123);
-        conta1.setSaldo(1500.00);
 
-        System.out.println("Titular: " + conta1.getTitular());
-        System.out.println("Número: " + conta1.getNumero());
-        System.out.println("Saldo: " + conta1.getSaldo());
+        // Diretor
+        Diretor diretor = new Diretor();
+        diretor.setSenha(1234);
 
-        conta1.sacar(500.00);
+        // Gerente
+        Gerente gerente = new Gerente();
+        gerente.setSenha(5678);
+
+        // Cliente
+        Cliente cliente = new Cliente();
+        cliente.setSenha(9999);
+
+        // Testes de autenticação
+        System.out.println("Diretor: " + diretor.autenticar(1234));
+
+        System.out.println("Gerente: " + gerente.autenticar(5678));
+
+        System.out.println("Cliente: " + cliente.autenticar(9999));
     }
 }
